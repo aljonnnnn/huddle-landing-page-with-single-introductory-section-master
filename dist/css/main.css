@@ -12,9 +12,270 @@ html {
   padding: 0;
 }
 
+a, a:focus, a:active {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Open sans', sans-serif;
   line-height: 1.5;
-  background-color: #674baf;
   overflow-x: hidden;
+}
+
+.m-t-50 {
+  margin-top: 50px;
+}
+
+.m-l-15 {
+  margin-left: 15px;
+}
+
+.p-l-56 {
+  padding-left: 56px;
+}
+
+.w-45 {
+  width: 45%;
+}
+
+.w-55 {
+  width: 55%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+@media (max-width: 1200px) {
+  .m-lg-t-0 {
+    margin-top: 0;
+  }
+  .w-lg-50 {
+    width: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  .w-sm-100 {
+    width: 100%;
+  }
+  .m-sm-b-50 {
+    margin-bottom: 50px;
+  }
+  .p-sm-l-0 {
+    padding-left: 0;
+  }
+  .m-sm-lr-5 {
+    margin-left: 5px;
+  }
+  .text-sm-center {
+    text-align: center;
+  }
+}
+
+footer p {
+  background: #674baf;
+}
+
+footer p a {
+  color: white;
+}
+
+.hero {
+  background-image: url("../images/bg-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: contain;
+  background-color: #674baf;
+}
+
+@media (max-width: 576px) {
+  .hero {
+    background-image: url("../images/bg-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
+  }
+}
+
+.hero__container {
+  max-width: 1271px;
+  margin: 0 auto;
+  position: relative;
+  padding: 200px 0 107px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (max-width: 1200px) {
+  .hero__container {
+    padding: 200px 15px 107px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero__container {
+    padding: 121px 39px 131px;
+  }
+}
+
+.hero .logo {
+  position: absolute;
+  top: 64px;
+  left: 0;
+}
+
+@media (max-width: 1200px) {
+  .hero .logo {
+    left: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero .logo {
+    left: 39px;
+    top: 38px;
+  }
+}
+
+.hero .logo img {
+  max-width: 198px;
+}
+
+@media (max-width: 576px) {
+  .hero .logo img {
+    max-width: 119px;
+  }
+}
+
+.hero__heading {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1200px) {
+  .hero__heading {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero__heading {
+    margin-bottom: 10px;
+  }
+}
+
+.hero__paragraph {
+  font-family: "Open sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+  margin-bottom: 23px;
+}
+
+@media (max-width: 1200px) {
+  .hero__paragraph {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero__paragraph {
+    margin-bottom: 24px;
+  }
+}
+
+.hero__btn {
+  display: inline-block;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 13px 64px;
+  background-color: white;
+  color: black;
+  border-radius: 30px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.hero__btn:hover {
+  background-color: #e882e8;
+  color: white;
+  -webkit-box-shadow: 1px 8px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 1px 8px 10px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 576px) {
+  .hero__btn {
+    padding: 11px 77px;
+  }
+}
+
+.hero .group-social-icon {
+  position: absolute;
+  bottom: 54px;
+  right: 0;
+}
+
+@media (max-width: 1200px) {
+  .hero .group-social-icon {
+    right: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero .group-social-icon {
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    left: 50%;
+    bottom: 40px;
+  }
+}
+
+.hero .group-social-icon span {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid white;
+  font-size: 20px;
+  line-height: 40px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.hero .group-social-icon span a {
+  color: white;
+}
+
+.hero .group-social-icon span:hover {
+  border: 1px solid #e882e8;
+}
+
+.hero .group-social-icon span:hover a {
+  color: #e882e8;
+}
+
+@media (max-width: 576px) {
+  .hero .group-social-icon span {
+    height: 28px;
+    width: 28px;
+    font-size: 14px;
+    line-height: 28px;
+  }
 }

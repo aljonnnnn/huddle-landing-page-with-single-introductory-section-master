@@ -12,9 +12,97 @@ html {
     padding: 0;
 }
 
+a, a:focus, a:active{
+    text-decoration: none;
+}
+
+
+img{
+    width: 100%;
+    height: auto;
+}
+
 body{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Open sans', sans-serif;
     line-height: 1.5;
-    background-color: $violet;
     overflow-x: hidden;
+}
+
+// socia icon
+
+
+
+
+// utilities
+
+// margin
+.m-t-50{
+    margin-top: 50px;
+}
+
+.m-l-15{
+    margin-left: 15px;
+}
+// padding
+.p-l-56{
+    padding-left: 56px;
+}
+// width
+.w-45{
+    width: 45%;
+}
+
+.w-55{
+    width: 55%;
+}
+
+// text
+.text-center{
+    text-align: center;
+}
+
+@media (max-width: 1200px) {
+
+    // margin
+    .m-lg-t-0{
+        margin-top: 0;
+    }
+
+    // width
+    .w-lg-50{
+        width: 50%;
+    }
+}
+
+@media (max-width: 576px) {
+
+    // width
+    .w-sm-100{
+        width: 100%;
+    }
+
+    // margin
+    .m-sm-b-50{
+        margin-bottom: 50px;
+    }
+
+    .p-sm-l-0{
+        padding-left: 0;
+    }
+
+    .m-sm-lr-5{
+        margin-left: 5px;
+    }
+
+    .text-sm-center{
+        text-align: center;
+    }
+}
+
+// footer
+footer p{
+    background: $violet;
+    a{
+        color: $white;
+    }
 }
